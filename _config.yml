@@ -1,0 +1,14 @@
+# Site settings
+title: Yoolk REST API Documentation
+email: chamnap@yoolk.com
+description: > # this means to ignore newlines until "baseurl:"
+  Yoolk REST API Documentation
+baseurl: "/api-documentation" # the subpath of your site, e.g. /blog/
+v1_baseurl: '/api-documentation/v1'
+v2_baseurl: '/api-documentation/v2'
+url: "https://yoolk.github.io" # the base hostname & protocol for your site
+twitter_username: yoolk
+github_username:  yoolk
+
+# Build settings
+markdown: kramdown
