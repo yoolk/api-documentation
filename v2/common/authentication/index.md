@@ -59,21 +59,6 @@ https://api.yoolk.com/v2/oauth/token
   </div>
 </div>
 
-<h2 class="tags" id="revoke_token"><code>POST</code> /v2/oauth/revoke</h2>
-
-Revoke the given `access_token`, otherwise returns `401`. It can be used to implement log out.
-
-<div class="codehilite">
-  <div class="codehilite-header">
-    <h4>Request</h4>
-  </div>
-  <div class="codehilite-body">
-{% highlight django%}{% raw %}
-https://api.yoolk.com/v2/oauth/revoke?access_token=b246007424251b119023c6b897f7a3b49f1a1168fec4a75dced6b2b2cd30d82d
-{% endraw %}{% endhighlight %}
-  </div>
-</div>
-
 <h2 class="tags" id="token_info"><code>GET</code> /v2/oauth/token/info</h2>
 
 Return information about `access_token`, otherwise returns `401`.
