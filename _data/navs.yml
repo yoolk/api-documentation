@@ -1,0 +1,14 @@
+- title: Common
+  href: '/common'
+  children:
+    - name: Introduction
+      href: ''
+    - name: Authentication
+      href: '/authentication'
+- title: Endpoints
+  href: '/endpoints'
+  children:
+    - name: Introduction
+      href: ''
+    - name: Portals
+      href: '/portals'

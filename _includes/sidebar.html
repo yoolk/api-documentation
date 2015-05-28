@@ -1,0 +1,23 @@
+<nav class="nav-menu">
+  <dl>
+    <dt class="nav-first-child">API Documentation</dt>
+    {% for nav in site.data.navs %}
+      <dt {% if page.dir contains nav.href %} class="active" {% endif %}>
+        <a href="{{ nav.href | prepend: site.v2_baseurl }}">{{ nav.title }}</a>
+      </dt>
+      {% if page.dir contains nav.href %}
+        <dd>
+          <ul class="subnav">
+            {% for child in nav.children %}
+              <li class="subnav-item">
+                <a class="{% if page.dir contains child.href %}{{'sub-active'}}{% endif %}" href="{{child.href | prepend: nav.href | prepend: site.v2_baseurl }}/">
+                  {{ child.name }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </dd>
+      {% endif %}
+    {% endfor %}
+  </dl>
+</nav>
